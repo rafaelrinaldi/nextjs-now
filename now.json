@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "alias": ["nextjs-now.now.sh"],
+  "builds": [
+    { "src": "next.config.js", "use": "@now/next" },
+    { "src": "server.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(foo|bar)", "dest": "server.js" }
+  ]
+}

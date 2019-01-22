@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "next build",
+    "dev": "node server.js",
+    "prestart": "yarn build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "next": "^7.0.2",
+    "react": "v16.8.0-alpha.1",
+    "react-dom": "v16.8.0-alpha.1"
+  }
+}
+
