@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "alias": ["nextjs-now.now.sh"],
+  "alias": ["nextjs-now"],
   "builds": [
     { "src": "next.config.js", "use": "@now/next" },
     { "src": "server.js", "use": "@now/node" }
