@@ -1,11 +1,19 @@
 {
   "version": 2,
-  "alias": ["nextjs-now"],
+  "alias": "nextjs-now",
   "builds": [
     { "src": "next.config.js", "use": "@now/next" },
     { "src": "server.js", "use": "@now/node" }
   ],
   "routes": [
-    { "src": "/(foo|bar)", "dest": "server.js" }
+    {
+      "src": "/(foo|bar)",
+      "methods": ["GET"],
+      "dest": "/server.js",
+      "status": 200,
+      "headers": {
+        "Content-Type": "text/plain" 
+      }
+    }
   ]
 }
